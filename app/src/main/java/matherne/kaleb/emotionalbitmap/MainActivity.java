@@ -12,12 +12,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ImageView choice = (ImageView) findViewById(R.id.imageView);
-        ColorButton button1 = new ColorButton(choice,
-                (ImageButton) findViewById(R.id.imageButton), "#00796B");
-        ColorButton button2 = new ColorButton(choice,
-                (ImageButton) findViewById(R.id.imageButton2), "#512DA8");
-        ColorButton button3 = new ColorButton(choice,
-                (ImageButton) findViewById(R.id.imageButton3), "#E64A19");
+        ColorButton button1 = new ColorButton(getApplicationContext(), choice,
+                (ImageButton) findViewById(R.id.imageButton), R.color.testBlue);
+        ColorButton button2 = new ColorButton(getApplicationContext(), choice,
+                (ImageButton) findViewById(R.id.imageButton2), R.color.testGreen);
+        ColorButton button3 = new ColorButton(getApplicationContext(), choice,
+                (ImageButton) findViewById(R.id.imageButton3), R.color.testRed);
 
     }
 }
